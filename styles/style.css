@@ -6,3 +6,123 @@ Green: #00B172
 White: #FFF
 
 */
+
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600;700&display=swap');
+
+/* GENERIC */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Signika';
+    color: #1A1A1A;
+}
+
+.rowPadding{
+    padding: 50px 50px;
+}
+
+.borderBottom{
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    display: inline-block;
+}
+
+h1{
+    font-size: 64px;
+}
+h2{
+    font-size: 42px;
+}
+/* SECTION: navbarSection */
+#navbarSection{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#navbarSection img{
+    width: 10%;
+}
+#navbarSection nav a{
+    text-decoration: none;
+    padding: 20px;
+}
+
+/* SECTION: bannerSection */
+#bannerSection{
+    background-image: url("/images/landing.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+#bannerSection > *{
+    color: #FFF;
+    text-align: center;
+    position: relative;
+    top: 20%;
+}
+#bannerSection p{
+    font-size: 30px;
+    width: 45%;
+    margin: 30px auto;
+}
+
+/* SECTION: advantagesSection */
+#advantagesSection h2{
+    border-bottom-color: #00B172;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#advantagesSection #advantages-items{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 80%;
+    margin: 100px auto;
+}
+#advantagesSection #advantages-items .adv-item{
+    width: 33%;
+    padding: 0 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+#advantagesSection #advantages-items .adv-item img{
+    width: 100px;
+    height: 85px;
+}
+#advantagesSection #advantages-items .adv-item .adv-title{
+    color: #00B172;
+    font-size: 32px;
+    margin: 15px auto 30px;
+}
+#advantagesSection #advantages-items .adv-item .adv-body{
+    font-size: 24px;
+}
+
+/* SECTION: actionsSection */
+#actionsSection{
+    background-color: #00B172;
+    padding: 50px;
+    color: #FFF;
+    margin: 0 50px 80px;
+}
+#actionsSection h2{
+    border-bottom-color: #FFF;
+    margin-bottom: 40px;
+}
+#actionsSection .action-item{
+    margin-bottom: 40px;
+}
+#actionsSection .action-item h3{
+    margin-bottom: 20px ;
+}
