@@ -1,8 +1,175 @@
-/*
-Colors:
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+/* GENERIC */
+* {
+    margin: 0;
+    padding: 0;
+}
 
-*/
+body{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: #1A1A1A;
+}
+
+h1{
+    font-size: 64px;
+}
+h2{
+    font-size: 42px;
+}
+h3{
+    font-size: 32px;
+}
+
+.rowPadding{
+    padding: 50px 50px;
+}
+
+.borderBottom{
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    display: inline-block;
+}
+
+/* SECTION: navbarSection */
+#navbarSection{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: fixed;
+    top: 0px;
+    box-sizing: border-box;
+    height: 90px;
+    z-index: 50;
+    background-color: white;
+}
+#navbarSection #spotifyHome{
+    width: 15%;
+}
+#navbarSection #spotifyHome img{
+    width: 100%;
+}
+
+#navbarSection nav a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 24px;
+    color: #1A1A1A;
+}
+
+/* SECTION: bannerSection */
+#bannerSection{
+    background-image: url("/images/landing.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    margin-top: 90px;
+}
+#bannerSection > div{
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+#bannerSection p{
+    font-size: 30px;
+    width: 50%;
+    margin: 30px auto;
+    font-weight: 300;
+}
+
+/* SECTION: advantagesSection */
+#advantagesSection h2{
+    border-bottom-color: #00B172;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#advantagesSection #advantages-items{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 80%;
+    margin: 100px auto;
+}
+#advantagesSection #advantages-items .adv-item{
+    width: 33.3%;
+    padding: 0 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+#advantagesSection #advantages-items .adv-item img{
+    width: 100px;
+    height: 85px;
+}
+#advantagesSection #advantages-items .adv-item .adv-title{
+    color: #00B172;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 15px auto 30px;
+    text-align: center;
+}
+#advantagesSection #advantages-items .adv-item .adv-body{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+    padding: 0 20px;
+}
+
+/* SECTION: actionsSection */
+#actionsSection{
+    background-color: #00B172;
+    padding: 80px;
+    color: #FFF;
+    margin: 0 50px 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#actionsSection > *{
+    width: 50%;
+}
+
+#actionsSection #left-text h2{
+    border-bottom-color: #FFF;
+    margin-bottom: 40px;
+}
+#actionsSection #left-text .action-item{
+    margin-bottom: 40px;
+    width: 60%;
+}
+
+#actionsSection #left-text .action-item h3{
+    margin-bottom: 20px ;
+}
+#actionsSection #left-text .action-item p{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#actionsSection img#spotifyApp{
+    width: 320px;
+    float: right;
+}
+
+#actionsSection img#spotifyLogo{
+    position: absolute;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
